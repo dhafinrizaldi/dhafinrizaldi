@@ -1,0 +1,36 @@
+name: Update C-Cube Dashboard language stats
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # weekly, Monday 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate language breakdown SVG
+        env:
+          GH_TOKEN: ${{ secrets.DASHBOARD_PAT }}
+        run: node scripts/generate-org-langs.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- assets/org-langs.svg; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/org-langs.svg
+          git commit -m "Update C-Cube Dashboard language stats"
+          git push

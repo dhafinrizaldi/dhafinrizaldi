@@ -46,3 +46,20 @@ I'm passionate about full-stack development and machine learning, with a focus o
 - 🤖 Exploring ML applications in corrosion detection and predictive asset health monitoring
 
 ---
+
+## 📊 GitHub Stats
+
+<!-- TODO: replace YOUR-VERCEL-APP below with your deployed github-readme-stats domain, see setup steps -->
+
+<p align="center">
+  <img height="165" src="https://YOUR-VERCEL-APP.vercel.app/api?username=dhafinrizaldi&count_private=true&show_icons=true&theme=tokyonight&hide_border=true" />
+  <img height="165" src="https://YOUR-VERCEL-APP.vercel.app/api/top-langs/?username=dhafinrizaldi&count_private=true&layout=compact&theme=tokyonight&hide_border=true" />
+</p>
+
+**C-Cube Dashboard language breakdown** — aggregated across the private C-Cube Dashboard repos, updated weekly:
+
+<p align="center">
+  <img src="./assets/org-langs.svg" alt="Language breakdown across the C-Cube Dashboard repositories" />
+</p>
+
+---
