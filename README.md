@@ -49,6 +49,10 @@ I'm passionate about full-stack development and machine learning, with a focus o
 
 ## 📊 GitHub Stats
 
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=dhafinrizaldi&theme=tokyonight&hide_border=true" alt="GitHub streak stats" />
+</p>
+
 **C-Cube Dashboard language breakdown** — aggregated across the private C-Cube Dashboard repos, updated weekly:
 
 <p align="center">
